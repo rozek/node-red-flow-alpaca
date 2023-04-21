@@ -2,11 +2,11 @@
 
 Node-RED Flow (and web page example) for the Alpaca AI model
 
-This repository contains a function node for [Node-RED](https://nodered.org/) which can be used to run the [Stanford Alpaca model](https://github.com/tatsu-lab/stanford_alpaca) (a fine-tuned variant of the [LLaMA model](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/)) using [llama.cpp](https://github.com/ggerganov/llama.cpp) within a Node-RED flow. **Inference is done on the CPU** and still completes within a few seconds on a reasonably powerful computer.
+This repository contains a function node for [Node-RED](https://nodered.org/) which can be used to run the [Stanford Alpaca model](https://github.com/tatsu-lab/stanford_alpaca) (a fine-tuned variant of the [LLaMA model](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/)) using [llama.cpp](https://github.com/ggerganov/llama.cpp) within a Node-RED flow. **Inference is done on the CPU** (without requiring any special hardware) and still completes within a few seconds on a reasonably powerful computer.
 
 ![Alpaca HTTP Flow](./Alpaca-HTTP-Flow.png)
 
-Having the actual inference as a self-contained function node gives you the possibility to define your own user interface or even use it as part of an autonomous agent.
+Having the actual inference as a self-contained function node gives you the possibility to create your own user interface or even use it as part of an autonomous agent.
 
 > Nota bene: these flows do not contain the actual model. You will have to download your own copy from [HuggingFace](https://huggingface.co/Sosaka/Alpaca-native-4bit-ggml/blob/main/ggml-alpaca-7b-q4.bin).
 
