@@ -1,6 +1,6 @@
 # node-red-flow-alpaca #
 
-Node-RED Flow (and web page example) for the Alpaca AI model
+Node-RED Flow (and web page example) for the Alpaca AI model, trained with GPT-3
 
 This repository contains a function node for [Node-RED](https://nodered.org/) which can be used to run the [Stanford Alpaca model](https://github.com/tatsu-lab/stanford_alpaca) (a fine-tuned variant of the [LLaMA model](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/)) using [llama.cpp](https://github.com/ggerganov/llama.cpp) within a Node-RED flow. **Inference is done on the CPU** (without requiring any special hardware) and still completes within a few seconds on a reasonably powerful computer.
 
@@ -13,6 +13,7 @@ Having the actual inference as a self-contained function node gives you the poss
 If you like, you may also check out similar nodes and flows for other AI models as there are
 
 * [Meta AI LLaMA](https://github.com/rozek/node-red-flow-llama)
+* [Stanford Alpaca, trained with GPT-4](https://github.com/rozek/node-red-flow-gpt4-x-alpaca)
 * [Nomic AI GPT4All (filtered version)](https://github.com/rozek/node-red-flow-gpt4all-filtered)
 * [Nomic AI GPT4All (unfiltered version)](https://github.com/rozek/node-red-flow-gpt4all-unfiltered)
 * [Nomic AI GPT4All-J](https://github.com/rozek/node-red-flow-gpt4all-j)
