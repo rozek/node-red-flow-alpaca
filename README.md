@@ -41,9 +41,11 @@ Just download the model from [HuggingFace](https://huggingface.co/Sosaka/Alpaca-
 
 Afterwards, move the file `ggml-alpaca-7b-q4.bin` into the same subfolder `ai` where you already placed the `llama` executable.
 
-### Importing the Function Node ###
+### Importing the Function Nodes ###
 
 Finally, open the Flow Editor of your Node-RED server and import the contents of [Alpaca-Function.json](./Alpaca-Function.json). After deploying your changes, you are ready to run Alpaca inferences directly from within Node-RED.
+
+Additionally, you may also import the contents of [Alpaca-Tokenization.json](./Alpaca-Tokenization.json) if you want totokenize prompts, or of [Alpaca-Embeddings.json](./Alpaca-Embeddings.json) if you want to calculate embeddings for a given text.
 
 ## Usage ##
 
