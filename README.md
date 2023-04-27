@@ -6,7 +6,9 @@ This repository contains a function node for [Node-RED](https://nodered.org/) wh
 
 ![Alpaca HTTP Flow](./Alpaca-HTTP-Flow.png)
 
-Having the actual inference as a self-contained function node gives you the possibility to create your own user interface or even use it as part of an autonomous agent.
+Additionally, this repo also contains function nodes to tokenize a prompt or to calculate embeddings based on the Alpaca model.
+
+Having the inference, tokenization and embedding calculation as a self-contained function node gives you the possibility to create your own user interface or even use it as part of an autonomous agent.
 
 > Nota bene: these flows do not contain the actual model. You will have to download your own copy from [HuggingFace](https://huggingface.co/Sosaka/Alpaca-native-4bit-ggml/blob/main/ggml-alpaca-7b-q4.bin).
 
